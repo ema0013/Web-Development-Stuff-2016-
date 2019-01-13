@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<!-- Edwin Ma -->
+<html>
+	<head>
+		<title>Internet Quiz</title>
+		<style>
+		div
+		{
+			font-size:20pt;
+		}
+		form
+		{
+			font:20px verdana;
+		}
+		.submit
+		{
+			font-size:36pt;
+		}
+		</style>
+		<script>
+
+		</script>
+	</head>
+	
+	<body>
+		<form method = "post" action = "results.php" >
+			Personal Information: <br/>
+				<label>First Name: <input type = "text" name = "namef" /><label>
+				<label>Last Name: <input type = "text" name = "namel" /><label>
+				<br/>
+				Gender: 
+				<label>Male <input type = "radio" name = "gender" value = "male" /> </label>
+				<label>Female <input type = "radio" name = "gender" value = "Female"/> </label>
+				<label>This question is sexist. <input type = "radio" name = "gender" value = "sexist"/> </label>
+				<br/>
+				Is this your First Internet Quiz? 
+				<br/>
+				<label>Check if Yes.<input type = "checkbox" name = "firstquiz" /> </label>
+				
+				<hr />
+			Questions: <br/>
+			<div>Are you Physically Active?</div>
+			<label> No. <input type = "radio" name = "Q1" value = "1" /> </label>
+			<label>Not Really. <input type = "radio" name = "Q1" value = "2" /> </label>
+			<label>Only during Gym Class. <input type = "radio" name = "Q1" value = "3" /> </label>
+			<label> All the Time! <input type = "radio" name = "Q1" value = "4" /> </label>
+			<hr/>
+			<div>How Are Your Grades In School?</div>
+			<label>...You don't want to know. <input type = "radio" name = "Q2" value = "1" /> </label>
+			<label>Bad. <input type = "radio" name = "Q2" value = "2" /> </label>
+			<label>Average. <input type = "radio" name = "Q2" value = "3" /> </label>
+			<label>Top of the Class! <input type = "radio" name = "Q2" value = "4" /> </label>
+			<hr/>
+			<div>Do you eat healthy? </div>
+			<label>Not in the slightest! <input type = "radio" name = "Q3" value = "1" /> </label>
+			<label>..Prefer not to answer. <input type = "radio" name = "Q3" value = "2" /> </label>
+			<label>Junk food is not in my vocab. <input type = "radio" name = "Q3" value = "3" /> </label>
+			<label>I'll eat anything! <input type = "radio" name = "Q3" value = "4" /> </label>
+			<hr/>
+			<div>A mad dog is in your way. What do you do? </div>
+			<label>RUN AWAY!<input type = "radio" name = "Q4" value = "1" /> </label>
+			<label>Make a tactical Retreat. <input type = "radio" name = "Q4" value = "2" /> </label>
+			<label>Beat it down! <input type = "radio" name = "Q4" value = "3" /> </label>
+			<label>Call Animal Control. <input type = "radio" name = "Q4" value = "4" /> </label>
+			<hr/>
+			<div>How do you ask your parents for requests? </div>
+			<label>I don't.<input type = "radio" name = "Q5" value = "1" /> </label>
+			<label>Ask them nicely. <input type = "radio" name = "Q5" value = "2" /> </label>
+			<label>Force them to do it. <input type = "radio" name = "Q5" value = "3" /> </label>
+			<label>Use my persuasive powers. <input type = "radio" name = "Q5" value = "4" /> </label>
+			<hr/>
+			<div>What would you call your best friend? </div>
+			<label>I don't have any friends <input type = "radio" name = "Q6" value = "1" /> </label>
+			<label>An introvert. <input type = "radio" name = "Q6" value = "2" /> </label>
+			<label>A socially active person. <input type = "radio" name = "Q6" value = "3" /> </label>
+			<label>A yankee. <input type = "radio" name = "Q6" value = "4" /> </label>
+			<hr/>
+			<div>Are you bored of this quiz yet? </div>
+			<label>Too bored to respond. <input type = "radio" name = "Q7" value = "1" /> </label>
+			<label>Yes, Very. <input type = "radio" name = "Q7" value = "2" /> </label>
+			<label>A socially active person. <input type = "radio" name = "Q7" value = "3" /> </label>
+			<label>A yankee. <input type = "radio" name = "Q7" value = "4" /> </label>
+			<hr/>
+			<div>If you have/would have a pet, what would it be? </div>
+			<label>Dog<input type = "radio" name = "Q8" value = "1" /> </label>
+			<label>Cat<input type = "radio" name = "Q8" value = "2" /> </label>
+			<label>Reptiles;They're much cooler than the rest!<input type = "radio" name = "Q8" value = "3" /> </label>
+			<label>Pet? You mean food?<input type = "radio" name = "Q8" value = "4" /> </label>
+			<hr/>
+			<div>If you have/would have a pet, what would it be? </div>
+			<label>Dog<input type = "radio" name = "Q9" value = "1" /> </label>
+			<label>Cat<input type = "radio" name = "Q9" value = "2" /> </label>
+			<label>Reptiles;They're much cooler than the rest!<input type = "radio" name = "Q9" value = "3" /> </label>
+			<label>Did you just repeat the last question?<input type = "radio" name = "Q9" value = "4" /> </label>
+			<hr/>
+			<div>Do you have any comments about this quiz?</div>
+			<label>This Quiz Sucks!<input type = "radio" name = "Q10" value = "1" /></label>
+			<label>Yes, this quiz is amazing!<input type = "radio" name = "Q10" value = "2" /></label>
+			<label>Who cares? I don't.<input type = "radio" name = "Q10" value = "3" /></label>
+			<label>Please stop wasting my time with these questions.<input type = "radio" name = "Q10" value = "4" /></label>
+			<br/>
+			<br/>
+			<input class = "submit" type = "submit" />
+		</form>
+	</body>
+</html> 
