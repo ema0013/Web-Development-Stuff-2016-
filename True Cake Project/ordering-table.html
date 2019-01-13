@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!-- Edwin Ma,Bryant Hua -->
+<html>
+	<head>
+		<title></title>
+		<link rel = "stylesheet" href = "cakecss.css" />
+		<style>
+		table
+		{
+			border-style:solid;
+			margin:auto;
+			background-color:pink
+		}
+		td
+		{
+			border-style:solid;
+		}
+		button.money
+		{
+			margin-left:50%;
+		}
+		div.bdy
+		{
+			z-index:-1;
+		}
+		a
+		{
+			color:black;
+		}
+		</style>
+		<script src = "ordering-table.js" >
+		</script>
+	</head>
+	<body onload = "initialize();">
+	<div class = "bdy" >
+			<img src = "images/kirby.gif" />
+	</div>
+	<h1> Menu <a href = "index.html"> Click Here to Return to the Main Page</a></h1>
+		<table>
+			<tr>
+				<th colspan = "10">
+				Ordering Menu
+				</th>
+			</tr>
+			<tr>
+				<td> Simple Cakes: $20.00 </td>
+				<td> MaMa Specials: $30.00 </td>
+				<td> Fan Favorites: $25.00 </td>
+				<td> Deluxe Goods: $35.00</td>
+			</tr>
+			<tr>
+				<td>Fruitcake<input id = "cakeone" type = "number" value = "0" > </td>
+				<td>Zwiebelkuchen<input id = "caketwo" type = "number" value = "0"> </td>
+				<td>New York Cheesecake<input id = "cakethree" type = "number" value = "0"> </td>
+				<td>Marshmallow Oreo Cake<input id = "cakefour" type = "number" value = "0"> </td>
+			</tr>
+			<tr>
+				<td>Funnel Cake<input id = "cakefive" type = "number" value = "0"> </td>
+				<td>Bienenstich<input id = "cakesix" type = "number" value = "0"> </td>
+				<td>Red Velvet Cake<input id = "cakeseven" type = "number" value = "0"> </td>
+				<td>Mississippi Mud Pie<input id = "cakeeight" type = "number" value = "0"> </td>
+			</tr>
+			<tr>
+				<td>Carrot Cake<input id = "cakenine" type = "number" value = "0"> </td>
+				<td>Chocolate Pudding Cake<input id = "caketen" type = "number" value = "0"> </td>
+				<td>Galaxy Cake<input id = "cakeeleven" type = "number" value = "0"> </td>
+				<td>Tiramisu<input id = "caketwelve" type = "number" value = "0"> </td>
+			</tr>
+			<tr>
+				<td>Molten Lava Cake<input id = "cakethirteen" type = "number" value = "0"> </td>
+				<td>Lemon Cake<input id = "cakefourteen" type = "number" value = "0"> </td>
+				<td>Candy Cake<input id = "cakefifteen" type = "number" value = "0"> </td>
+				<td>Green Tea Mousse<input id = "cakesixteen" type = "number" value = "0"> </td>
+			</tr>
+		</table>
+		<button class = "money" onclick = "checkforNegativesAndCalculateCost();">Click to calculate the total cost</button>
+		<div id = "column" > 
+			$<span id = "cost">0.00</span>
+		</div>
+		Put in your Credit Card info here!
+		<input type = "txt">
+		<button onclick = "location.href = 'processedinfo.html' ">Click to Submit</button>
+		
+	</body>
+</html> 

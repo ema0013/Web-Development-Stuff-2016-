@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<!-- Edwin Ma,Bryant Hua -->
+<html>
+	<head>
+		<title></title>
+		<link rel = "stylesheet" href = "cakecss.css" />
+		<style>
+		a
+		{
+			color:black;
+		}
+		</style>
+		<script src = "buildyourowncake.js">
+		</script>
+	</head>
+	<body onload = "initialize();" >
+		<div class = "bdy" >
+			<img src = "images/kirby.gif" />
+		</div>
+		<h1> Design Your Own Cake! <a href = "index.html"> Go Back to the Homepage </a></h1>
+		
+		<img id = "cakedisplay" src = "images/blank.png" />
+		<ul class = "cakess"> Inside of the Cake
+			<li>
+				<input id = "cakesponge" type = "checkbox">
+				Sponge Inside
+			</li>
+			<li>
+				<input id = "cakecream" type = "checkbox">
+				Ice Cream Inside
+			</li>
+		</ul>
+		<ul class = "cakess" > Inside Flavor
+			<li>
+				<input id = "cakechoco" type = "checkbox"> 
+				Chocolate
+			</li>
+			<li>
+				<input id = "cakevall" type = "checkbox">
+				Vanilla
+			</li>
+			<li>
+				<input id = "cakestraw" type = "checkbox">
+				Strawberry
+			</li>
+		</ul>
+		<ul class = "cakess" >
+			<li>
+				<input type = "checkbox" id = "works">
+				The Works
+			</li>
+		</ul>
+		<button onclick = "changeCake();"> Click here to see the final Product! </button> <br/>
+		<div>
+		If Our Options don't suit your choice, you can enter your own specifications in a paragraph. <br/>
+		<textarea id = "custom" ></textarea>
+		<button onclick = "calculateCost();"> Proceed to the Checkout </button>
+		<h2> Checkout </h2>
+		<div id = "column" >
+		<span id = "checkout">$0.00</span>
+		<br/>
+		<br/>
+		</div>
+		<h3>Put in your Credit Card info here!</h3>
+		<input type = "txt">
+		<button onclick = "location.href = 'processedinfo.html' ">Click to Submit</button>
+	</body>
+</html> 
